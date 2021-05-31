@@ -1,0 +1,220 @@
+.dashboard__header{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background: #050505;
+    z-index: 9;
+    box-shadow: 0 5px 10px -8px #306fcb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainheader__nav{
+    width: 100%;
+    max-width: 1400px;
+    padding: 5px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.img__contain{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+/* Menu design */
+.menu__toggle{
+    cursor: pointer;
+    font-size: 40px !important;
+}
+
+/* Desktop menu */
+.mainheader__desktopMenu{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.active__item{
+    color: #306fcb;
+}
+.mainheader__desktopMenu > .list__item{
+    padding: 5px 20px;
+    cursor: pointer;
+    transition: all ease-out 250ms;
+}
+.mainheader__desktopMenu > .list__item:hover{
+    color: #666;
+    transition: all ease-in 250ms;
+}
+.user__ctrl{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.ctrl__item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.ctrl__item1{
+    font-size: 10px;
+    transition: all ease-out 250ms;
+}
+.ctrl__item2{
+    font-size: 20px;
+}
+.user__iconContain{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: #666;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.logout__icon{
+    cursor: pointer;
+    transition: all ease-out 250ms;
+}
+.ctrl__item1:hover{
+    color: #306fcb;
+    transition: all ease-in 250ms;
+}
+.logout__icon:hover{
+    color: red;
+    transition: all ease-in 250ms;
+}
+
+/* Mobile menu */
+.mainheader__mobileMenuOpen,
+.mainheader__mobileMenuClose{
+    width: 80vw;
+    height: 100vh;
+    background-color: #666;
+    position: fixed;
+    top: 0;
+
+}
+/* This is the css design for mainheader__mobileMenuOpen */
+.mainheader__mobileMenuOpen{
+    left: 0;
+    animation: menuSlideOut 250ms;
+}
+.listItem__header{
+    padding: 10px 20px;
+    border-bottom: 1px solid #050505;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.mainheader__mobileMenuOpen > .list__item{
+    width: 100%;
+    padding: 5px 40px;
+    cursor: pointer;
+    transition: all ease-out 250ms;
+}
+.mainheader__mobileMenuOpen > .list__item:hover{
+    background-color: #3c3c3c;
+    transition: all ease-in 250ms;
+}
+/* This is the css design for mainheader__mobileMenuClose */
+.mainheader__mobileMenuClose{
+    left: -120vw;
+    animation: menuSlideIn 250ms;
+}
+
+/* Menu animations */
+@keyframes menuSlideOut {
+    0%{
+        left: -120vw;
+    }     
+    50%{
+        left: -60vw;
+    }
+    100%{
+        left: 0;
+    }
+}
+@-o-keyframes menuSlideOut {
+    0%{
+        left: -120vw;
+    }
+    50%{
+        left: -60vw;
+    }
+    100%{
+        left: 0;
+    }
+}
+@-moz-keyframes menuSlideOut {
+    0%{
+        left: -120vw;
+    }
+    50%{
+        left: -60vw;
+    }
+    100%{
+        left: 0;
+    }
+}
+@-webkit-keyframes menuSlideOut {
+    0%{
+        left: -120vw;
+    }
+    50%{
+        left: -60vw;
+    }
+    100%{
+        left: 0;
+    }
+}
+
+
+@keyframes menuSlideIn {
+    100%{
+        left: -120vw;
+    }     
+    50%{
+        left: -60vw;
+    }
+    0%{
+        left: 0;
+    }
+}
+@-o-keyframes menuSlideIn {
+    100%{
+        left: -120vw;
+    }
+    50%{
+        left: -60vw;
+    }
+    0%{
+        left: 0;
+    }
+}
+@-moz-keyframes menuSlideIn {
+    100%{
+        left: -120vw;
+    }
+    50%{
+        left: -60vw;
+    }
+    0%{
+        left: 0;
+    }
+}
+@-webkit-keyframes menuSlideIn {
+    100%{
+        left: -120vw;
+    }
+    50%{
+        left: -60vw;
+    }
+    0%{
+        left: 0;
+    }
+}

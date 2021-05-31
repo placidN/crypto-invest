@@ -1,0 +1,30 @@
+body{
+    background-image: url("../img/map.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(14, 13, 19, 0.4);
+    background-blend-mode: color-burn;
+    background-attachment: fixed;
+    color: #ddd;
+}
+li{
+    list-style: none;
+}
+.loading__screen{
+    width: 100%;
+    max-width: 1200px;
+}
+.content__contain{
+    width: 100%;
+    max-width: 1200px;
+}
+.mainheader__nav{
+    color:#ddd;
+}
+.dashboard__main{
+    width: 100%;
+    min-height: 87vh;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}

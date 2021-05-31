@@ -1,0 +1,15 @@
+body{
+    background-image: url("../img/map.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(14, 13, 19, 0.4);
+    background-blend-mode: color-burn;
+    background-attachment: fixed;
+    /* background-position: center; */
+}
+
+
+.signup__formContain{
+    width: 100%;
+    max-width: 600px;
+}

@@ -1,0 +1,204 @@
+
+
+.processor__formContain{
+    width: 100%;
+    padding: 20px;
+}
+.processor__formContain > h1{
+    color: #ddd;
+}
+.switch__contain{
+    width: 100%;
+}
+.formbox__formRow{
+    width: 100%;
+    display: flex;
+}
+.formbox__formColumn{
+    height: 80px;
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: baseline
+}
+.splitColumn > .formbox__formColumn{
+    width: 50%;
+}
+.fullColumn > .formbox__formColumn{
+    width: 100%;
+}
+.formbox__formColumn label{
+    color: #306fcb;
+    position: absolute;
+    left: 20px;
+    top: 75%;
+    font-size: 14px;
+    transform: translate(0, -50%);
+    z-index: -1;
+}
+.checkBox{
+    padding: 20px 0;
+}
+.checkBox label,
+.redirect_paragraph{
+    font-size: 12px;
+    color: #ddd;
+    margin-left: 5px;
+}
+.checkBox strong,
+.redirect_paragraph strong{
+    color: #306fcb;
+}
+.redirect_paragraph{
+    margin: 15px 0;
+}
+.formbox__formColumn input[type=text],
+.formbox__formColumn input[type=email],
+.formbox__formColumn input[type=password]{
+    background-color: transparent;
+    border: 1px solid #306fcb;
+    border-radius: 5px;
+    color: #ddd;
+    font-size: 14px;
+    padding: 10px 20px;
+    width: 100%;
+}
+input[type=text]:focus + label,
+input[type=email]:focus + label,
+input[type=password]:focus + label,
+input[type=text]:valid + label,
+input[type=email]:valid + label,
+input[type=password]:valid + label{
+    position: static;
+    font-size: 12px;
+    color: #6d87af;
+    animation: growLabel 300ms;
+    z-index: 0;
+}
+.btnContain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+    font-weight: 700;
+}
+.btn{
+    padding: 10px 20px;
+    min-width: 200px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #ddd;
+    box-shadow: 0 20px 15px -18px #fff;
+}
+
+.btn__primary{
+    background: #306fcb;
+    color: #fff;
+    border: 1px solid #306fcb;
+}
+.btn__primary:hover{
+    background: linear-gradient(to top right, #306fcb, #6d87af);
+    transition: all ease-in 300ms;
+}
+
+
+.swal-overlay {
+    background-color: transparent;
+}
+.swal-modal {
+    background-color: transparent;
+    border: 3px solid #306fcb;
+}
+.success__note{
+    color: #a5dc86 !important;
+}
+.error__note{
+    color: #f27474 !important;
+}
+.swal-title {
+    margin: 0px;
+    font-size: 16px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.21);
+    margin-bottom: 28px;
+    color: inherit;
+}
+.swal-text {
+    background-color: transparent;
+    padding: 17px;
+    border: 1px solid #306fcb;
+    display: block;
+    margin: 22px;
+    text-align: center;
+    color: #ddd;
+}
+.swal-button-container:hover{
+    background-color: transparent;
+}
+.swal-button {
+    padding: 7px 19px;
+    border-radius: 2px;
+    background-color: transparent;
+    font-size: 12px;
+    border: 1px solid #306fcb;
+    text-shadow: 0px -1px 0px rgb(65, 5, 55);
+}
+.swal-button:hover{
+    background-color: transparent;
+    color: #306fcb;
+}
+.swal-icon--success__hide-corners,
+.swal-icon--success::after,
+.swal-icon--success::before{
+    background-color: transparent;
+}
+
+@media only screen and (max-width: 520px){
+    .splitColumn{
+        flex-direction: column;
+    }
+    .splitColumn > .formbox__formColumn{
+        width: 100%;
+    }
+}
+
+@keyframes growLabel {
+    0% {
+        top: 75%;
+        left: 20px;
+    }
+    100% {
+        top: 0;
+        left: 0;
+    }
+}
+@-o-keyframes growLabel {
+    0% {
+        top: 75%;
+        left: 20px;
+    }    
+    100% {
+        top: 0;
+        left: 0;
+    }
+}
+@-moz-keyframes growLabel {
+    0% {
+        top: 75%;
+        left: 20px;
+    }
+    100% {
+        top: 0;
+        left: 0;
+    }
+}
+@-webkit-keyframes growLabel {
+    0% {
+        top: 75%;
+        left: 20px;
+    }    
+    100% {
+        top: 0;
+        left: 0;
+    }
+}

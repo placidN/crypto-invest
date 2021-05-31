@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+/* font-family: 'Oswald', sans-serif; */
+*, *::before, *::after{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	outline: none;
+    scroll-behavior: smooth;
+}
+/* General settings */
+html::-webkit-scrollbar{
+    display: none;
+}
+html{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.green{
+    color: #00a033;
+}
+.red{
+    color: #b41313;
+}
+.bold{
+	font-weight: 800;
+}
+
+
+.processor{
+  width: 100%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.logo {
+  width: 120px;
+  height: fit-content;
+  cursor: pointer;
+}
+a{
+  text-decoration: none;
+}
+.pointer{
+  cursor: pointer;
+}

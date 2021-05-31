@@ -1,0 +1,19 @@
+.otp{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.otp__inputContain{
+    display: flex;
+}
+.otp__inputContain > input{
+    margin: 0 2px;
+    border-radius: 5px;
+    color: #ddd;
+    font-size: 14px;
+    padding: 10px;
+    text-align: center;
+    width: 50px !important;
+    height: 40px;
+}

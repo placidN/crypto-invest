@@ -1,0 +1,34 @@
+
+.contain{
+    width: 100%;
+}
+.signup__header{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background: #050505;
+    z-index: 9;
+}
+.signup__headerNav{
+    width: 100%;
+    padding: 0 4rem;
+    margin: 5px 0;
+    box-shadow: 0 5px 10px -8px #306fcb;
+}
+.signup__main{
+    width: 100%;
+    min-height: 87vh;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+footer{
+    color: #ddd;
+    padding: 20px;
+    font-size: 12px;
+    position: relative;
+    left: 0;
+    bottom: 0;
+}
